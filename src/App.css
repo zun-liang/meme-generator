@@ -85,6 +85,14 @@ body {
   font-family: 'Karla', sans-serif;
 }
 
+.form--button:hover {
+  cursor: pointer;
+}
+
+.form--button:active {
+  background: linear-gradient(90deg, #ca42fc 1.18%, #d681f5 100%);
+}
+
 .form--meme {
   width: 477px;
   height: 268px;
