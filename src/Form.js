@@ -1,21 +1,22 @@
-import React from "react";
+import React from "react"
+import { useState, useEffect } from "react"
 
-export default function Form() {
-    const [memes, setMemes] = React.useState([])
-    const [formData, setFormData] = React.useState({
+const Form = () => {
+    const [memes, setMemes] = useState([])
+    const [formData, setFormData] = useState({
         topText: "",
         bottomText: "",
         randomImg: "http://i.imgflip.com/1bij.jpg"
     })
 
-    React.useEffect(function() {
+    useEffect(() => {
         fetch("https://api.imgflip.com/get_memes")
             .then(res => res.json())
             .then(data => setMemes(data.data.memes))
     })
 
-    function handleChange(event) {
-        const {name, value} = event.target
+    const handleChange = (e) => {
+        const {name, value} = e.target
         setFormData(prevFormData => {
             return {
                 ...prevFormData,
@@ -24,7 +25,7 @@ export default function Form() {
         })
     }
 
-    function handleClick() {
+    const handleClick = () => {
         const randomNumber = Math.floor(Math.random() * memes.length)
         setFormData(prevFormData => {
             return {
@@ -63,3 +64,5 @@ export default function Form() {
         </main>
     )
 }
+
+export default Form
