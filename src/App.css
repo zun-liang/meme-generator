@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Space Mono&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -59,9 +61,10 @@ body {
   width: 550px;
   height: 485px;
   padding: 36px 37px 55px 36px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 40px 40px;
+  display: flex;
+  flex-direction: column;
+  /* grid-template-columns: 1fr; */
+  /* grid-template-rows: 40px; */
   gap: 17px;
 }
 
@@ -71,7 +74,7 @@ body {
   border-radius: 5px;
   border: 1px solid #D5D4D8;
   text-indent: 10px;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Space Mono', sans-serif;
 }
 
 .form--button {
@@ -82,7 +85,7 @@ body {
   border: none;
   color: white;
   grid-column: span 2;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Space Mono', sans-serif;
 }
 
 .form--button:hover {
@@ -129,4 +132,18 @@ body {
 
 .bottom {
   bottom: 18px;
+}
+
+.flex {
+  width: 477px;
+  gap: 1rem;
+  display: flex;
+}
+
+.even {
+  justify-content: space-evenly;
+}
+
+.even > * {
+  width: 90%;
 }
