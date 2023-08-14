@@ -1,12 +1,15 @@
-import React from "react"
-import Header from "./components/Header"
-import Form from "./components/Form"
-import './App.css'
+import React from "react";
 
-const App = () => 
+// Custom Imports
+import "./App.css";
+import Form from "./components/Form";
+import Header from "./components/Header";
+
+const App = () => (
   <div className="App">
     <Header />
     <Form />
   </div>
+);
 
-export default App
+export default App;
