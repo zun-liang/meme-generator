@@ -61,8 +61,9 @@ body {
   padding: 36px 37px 55px 36px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 40px 40px;
-  gap: 17px;
+  grid-template-rows: 40px 40px 1fr;
+  column-gap: 17px;
+  row-gap: 20px;
 }
 
 .form--input {
@@ -75,7 +76,7 @@ body {
 }
 
 .form--button {
-  width: 477px;
+  width: 230px;
   height: 40px;
   background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
   border-radius: 5px;
@@ -83,14 +84,25 @@ body {
   color: white;
   grid-column: span 2;
   font-family: 'Karla', sans-serif;
+  cursor: pointer;
 }
 
 .form--button:hover {
-  cursor: pointer;
+  opacity: 0.8;
 }
 
 .form--button:active {
   background: linear-gradient(90deg, #ca42fc 1.18%, #d681f5 100%);
+}
+
+#get-meme-button {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+
+#save-button {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
 }
 
 .form--meme {

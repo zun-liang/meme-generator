@@ -25,7 +25,7 @@ const Form = () => {
         })
     }
 
-    const handleClick = () => {
+    const getNewMeme = () => {
         const randomNumber = Math.floor(Math.random() * memes.length)
         setFormData(prevFormData => {
             return {
@@ -52,8 +52,11 @@ const Form = () => {
                     name="bottomText"
                     value={formData.bottomText}
                     onChange={handleChange} />
-                <button className="form--button" onClick={handleClick}>
-                    Get a new meme image  🖼
+                <button className="form--button" id="get-meme-button" onClick={getNewMeme}>
+                    Get a new meme image 🖼
+                </button>
+                <button className="form--button" id="save-button">
+                    Save Meme
                 </button>
                 <div className="form--meme">
                     <h3 className="meme--text top">{formData.topText}</h3>
