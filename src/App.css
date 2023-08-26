@@ -5,16 +5,22 @@
 }
 
 body {
+  width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+  overflow: hidden;
   background-color: #E5E5E5;
   color: white;
   font-family: 'Karla', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .App {
   width: 550px;
   height: 550px;
   background-color: white;
-  margin: 100px auto;
 }
 
 .header {
@@ -57,7 +63,7 @@ body {
 
 .form {
   width: 550px;
-  height: 485px;
+  height: 1000px/*485px*/;
   padding: 36px 37px 55px 36px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -141,4 +147,10 @@ body {
 
 .bottom {
   bottom: 18px;
+}
+
+#canvas {
+  width: 477px;
+  height: 268px;
+  display: none;
 }
