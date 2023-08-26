@@ -19,13 +19,14 @@ This is a solution to the [Learn React Project 3 Meme Generator](https://www.fig
 - CSS custom properties
 - Flexbox
 - Grid
+- FileSaver.js
 
 ### Helpful Resources
 
-- [<a> download attribute](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/a) - "download only works for sanme origin URLs".
+- [anchor element download attribute](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/a) - "download only works for sanme origin URLs".
 - [FileSaver.js](https://github.com/eligrey/FileSaver.js)
 - [Allowing cross-origin use of images and canvas](https://developer.mozilla.org/en-US/docs/Web/HTML/CORS_enabled_image)
-- [<canvas>: The Graphics Canvas element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas)
+- [canvas: The Graphics Canvas element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas)
 - [HTMLImageElement: Image() constructor](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image)
 - [CSS image()](https://developer.mozilla.org/en-US/docs/Web/CSS/image/image)
 - [Using React Hooks with canvas](https://koenvangilst.nl/blog/react-hooks-with-canvas)
