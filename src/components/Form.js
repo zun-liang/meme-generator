@@ -10,6 +10,7 @@ const Form = () => {
   });
 
   const canvasRef = useRef(null);
+  const [click, setClick] = useState(0);
 
   useEffect(() => {
     fetch("https://api.imgflip.com/get_memes")
@@ -38,6 +39,7 @@ const Form = () => {
   };
 
   const saveImage = () => {
+    setClick((prev) => prev + 1);
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
     const img = new Image();
@@ -63,7 +65,7 @@ const Form = () => {
         canvas.width / 2,
         canvas.height - 30
       );
-      canvas.toBlob((blob) => saveAs(blob, "meme.jpg"));
+      canvas.toBlob((blob) => saveAs(blob, `meme_${click}.jpg`));
     });
   };
 
