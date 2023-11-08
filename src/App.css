@@ -129,6 +129,8 @@ body {
   text-transform: uppercase;
   text-shadow: 2px 2px black, -2px -2px black, 2px -2px black, -2px 2px black;
   position: absolute;
+  word-break: break-word;
+  padding: 0 15px;
 }
 
 .top {

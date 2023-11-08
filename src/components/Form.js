@@ -52,6 +52,7 @@ const Form = () => {
       ctx.drawImage(img, 0, 0);
       ctx.fillStyle = "white";
       ctx.textAlign = "center";
+      ctx.wordBreak = "break-word";
       ctx.font = "900 8vh Impact";
       ctx.letterSpacing = "1px";
       ctx.shadowColor = "black";
